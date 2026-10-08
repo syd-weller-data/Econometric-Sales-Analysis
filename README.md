@@ -3,14 +3,16 @@ Analysis and forecasting of synthetic sales data using time series econometrics 
 
 Tools: Stata
 
-###Overview 
+### Overview 
 
 Based on synthetically created data in Excel, I was tasked with creating a five-page report detailing the performance of sales from a fake company 'Weller Industries', as well as forecasting sales performance numbers for an addition quarter and year. 
 
-##Data
+## Data
+
 The raw data was created in Excel but translated into a .dta file for use in Stata. The original dataset contained the date, CPI, interest rates, production rates, and recorded sales, with 500 observations of monthly data between 1968 and 2010. Based on my analysis of the data below, I chose to only use the date and recorded sales based on potential multicollinearity and economic intuition. I used CPI to transform the sales data from nominal to real. 
 
-###Analysis
+### Analysis
+
 I destringed and cleaned the data by transforming the labelling so the date matched the frequency and months were properly labelled. I then ran analysis in the following order:
 - I plotted the raw data and found a strong exponential trend, so I logged and differenced the data so it would appear stationary as well as pass the checks for valid statistical stationarity.
 - I set aside the last 100 observations to use as a test set for estimating a proper model. 
@@ -23,10 +25,11 @@ I destringed and cleaned the data by transforming the labelling so the date matc
 - Using RMSE out-of-sample results, I compared the performance of the two models to determine which one estimated the data better; I ultimately determined the ARMA(3,3) model to provide the most accurate estimation results.
 - Using the selected model, I predicted 100 data points and compared them to the actual 100 data points I had removed earlier.
 
-###Additional discussion
+### Additional Discussion
+
 Following my forecast comparison to the real sales figures, I discussed the potential relevance of the Lucas Critique and why I did not believe it applied to the synthetic Weller Industries data. I then summarized my findings and reaffirmed my choice of an ARMA(3,3) model for the provided synthetic data. 
 
-###Figures
+### Figures
 
 
 Raw Data before transformation using CPI:
@@ -46,7 +49,7 @@ Forecasted Sales Growth compared to actual data:
 <img width="982" height="371" alt="Screenshot 2026-10-08 at 16 52 08" src="https://github.com/user-attachments/assets/89a35bdc-5ac0-4143-ae3e-9baa51f46dd7" />
 
 
-##Skills Demonstrated
+### Skills Demonstrated
 - Stata efficiency
 - Econometric and Sales Data Analysis
 - Data Format Transformation
