@@ -27,10 +27,14 @@ I destringed and cleaned the data by transforming the labelling so the date matc
 Following my forecast comparison to the real sales figures, I discussed the potential relevance of the Lucas Critique and why I did not believe it applied to the synthetic Weller Industries data. I then summarized my findings and reaffirmed my choice of an ARMA(3,3) model for the provided synthetic data. 
 
 ##Figures
+
+
 Raw Data before transformation using CPI:
+
 <img width="524" height="400" alt="Screenshot 2026-10-08 at 16 50 25" src="https://github.com/user-attachments/assets/81ad2d4d-8e62-4770-8bca-72d2407a1301" />
 
 Transformed, visually stationary data:
+
 <img width="524" height="346" alt="Screenshot 2026-10-08 at 16 51 17" src="https://github.com/user-attachments/assets/2b838b72-9a72-49e0-870e-bc9245001daa" />
 
 ACF and PACF plots of transformed data:
